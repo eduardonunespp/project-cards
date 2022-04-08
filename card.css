@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&family=Varela+Round&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 37, 41);
+    padding: 0px;
+    margin: 0px;   
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: cont;
+    animation-duration: 3s;
+    
+    
+}
+/*@keyframes cont{
+    from{
+        transform: translate(-150%, -50%);
+    }
+    to{
+        transform: translate(-50%, -50%);
+    }
+
+
+    
+}
+*/
+.container .card1{
+    border-radius: 8px;
+    width: 280px;
+    height: 380px;
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    box-shadow: 6px 6px 6px rgb(31, 31, 31);
+    border-left: 1px solid rgb(155, 155, 155);
+    border-top: 1px solid rgb(155, 155, 155);
+    margin: 10px 5px;
+    animation-name: car1;
+    animation-duration: 1.7s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+
+}
+.container .card2{
+    border-radius: 8px;
+    width: 280px;
+    height: 380px;
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    box-shadow: 6px 6px 6px rgb(31, 31, 31);
+    border-left: 1px solid rgb(155, 155, 155);
+    border-top: 1px solid rgb(155, 155, 155);
+    margin: 10px 5px;
+    animation-name: car2;
+    animation-duration: 1.7s;
+    animation-delay: 1.0s;
+    animation-fill-mode: backwards;
+
+}
+.container .card3{
+    border-radius: 8px;
+    width: 280px;
+    height: 380px;
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    box-shadow: 6px 6px 6px rgb(31, 31, 31);
+    border-left: 1px solid rgb(155, 155, 155);
+    border-top: 1px solid rgb(155, 155, 155);
+    margin: 10px 5px;
+    animation-name: car3;
+    animation-duration: 1.7s;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+
+}
+@keyframes car1{
+    from{
+        transform: translateX(-800px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes car2{
+    from{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes car3{
+    from{
+        transform: translateX(-1250px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.container .card1 .content{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.7s;
+    position: relative;  
+}
+.container .card2 .content{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.7s;
+    position: relative;  
+}
+.container .card3 .content{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.7s;
+    position: relative;  
+}
+.content h1{
+    position: absolute;
+    z-index: -1;
+    top: -120px;
+    right: 20px;
+    font-size: 8em;
+    color: rgba(108, 109, 110, 0.385);
+}
+
+.content h2{
+    text-align: center;
+    color: rgb(202, 202, 202);
+    font-size: 1.8em;
+}
+.content p{
+    text-align: center;
+    line-height: 1.5em;
+    color: rgb(187, 187, 187);
+    font-size: 0.8em;
+    margin-bottom: 30px;
+}
+
+.card1 .content a, .card2 .content a, .card3 .content a {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    transition: 1s;
+}
+
+.card1 .content a:hover, .card2 .content a:hover, .card3 .content a:hover{
+    background-color: rgb(173, 173, 173);
+}
+
+.card1:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.card2:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.card3:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -25%);
+        
+
+    }
+}
