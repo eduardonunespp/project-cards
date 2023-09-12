@@ -8,7 +8,7 @@
 
 Este é um projeto de exemplo que demonstra como criar cards dinâmicos utilizando HTML e CSS, com foco especial em estilização avançada e animações. O objetivo deste projeto foi explorar conceitos mais aprofundados de estilização para criar uma experiência visualmente atraente.
 
-<h2>Techs Ultilizadas:</h2>
+<h2>Techs Utilizadas:</h2>
 
 <div>
  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
